@@ -1,13 +1,13 @@
-# Testy regresyjne w BackStopJS
+# Testy regresyjne w BackstopJS
 **W każdym większym projekcie natrafimy na ten moment, kiedy przestaniemy w pełni kontrolować cały kod. Wtedy pozostanie nam albo marnowanie długich godzin na testy ręczne albo automatyzacja.**
 
 ## Jak działają takie testy?
 Mechanizm sam w sobie jest bardzo prosty - robimy zrzut ekranu przed i po zmianach, a następnie sprawdzamy czy gdzieś nie pojawiły się jakieś niepożadane efekty.
 
-[](backstop_1.png)
+![](backstop_1.png)
 
 ## Przygotowanie
-Pierwszym krokiem jest zainstalowanie **BackStopJS** - najlepiej jest zrobić to globalnie za pomocą:
+Pierwszym krokiem jest zainstalowanie **BackstopJS** - najlepiej jest zrobić to globalnie za pomocą:
 ```
 npm install global backstopjs
 ```
@@ -90,7 +90,7 @@ backstop approve
 ```
 za jego pomocą nasze ostatnie testy zostaną uznane za referencyjne, aż do momentu, kiedy ponownie odpalimy `backstop reference`.
 
-[](backstop_2.png)
+![](backstop_2.png)
 
 ## Interakcje
 Bardzo często musimy sprawdzić nie tylko jak strona wygląda po wczytaniu, ale też i pewne interakcje. Dopiszmy więc scenariusz w którym klikniemy w link otwierający lightboxa:
@@ -140,7 +140,7 @@ Wyobraźmy sobie, że mamy na stronie box z losową reklamą. Co więc zrobić, 
 
 Na szczęście w każdym scenariuszu możemy zdefiniować, które elementy chcemy ukryć, a możemy to zrobić za pomocą `hideSelectors`.
 
-[](backstop_3.png)
+![](backstop_3.png)
 
 ### Prędkość serwera
 Czasem możemy natrafić na sytuację, kiedy niektóre testy zwrócą różnice, bo jeden z zasóbów nie zdążył się wczytać. Dlatego ważne jest żeby korzystać z dobrodziejstw parametrów `readyEvent`, `readySelector` czy `delay`. Dzięki nim zdefiniujemy kiedy strona naprawdę się wczytała.
