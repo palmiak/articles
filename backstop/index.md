@@ -1,4 +1,4 @@
-# Testy regresyjne w BackStopJS
+# Testy regresyjne w BackstopJS
 **W każdym większym projekcie natrafimy na ten moment, kiedy przestaniemy w pełni kontrolować cały kod. Wtedy pozostanie nam albo marnowanie długich godzin na testy ręczne albo automatyzacja.**
 
 ## Jak działają takie testy?
@@ -7,7 +7,7 @@ Mechanizm sam w sobie jest bardzo prosty - robimy zrzut ekranu przed i po zmiana
 ![](backstop_1.png)
 
 ## Przygotowanie
-Pierwszym krokiem jest zainstalowanie **BackStopJS** - najlepiej jest zrobić to globalnie za pomocą:
+Pierwszym krokiem jest zainstalowanie **BackstopJS** - najlepiej jest zrobić to globalnie za pomocą:
 ```
 npm install global backstopjs
 ```
@@ -149,9 +149,9 @@ Czasem możemy natrafić na sytuację, kiedy niektóre testy zwrócą różnice,
 W przeciwieństwie do np. testów jednostkowych, które mogą zwrócić prawdę albo fałsz, tutaj taki test zwraca nam "wygląda, tak jak wyglądało" albo "coś się zmieniło". I do nas należy interpretacja czy to dobrze czy nie.
 
 ## Co najlepiej testować?
-Najlepiej testować jak najmniej, ale za to różnorodnie. Takie testy są dość wolne i wymagają od nas dodatkowej uwagi. Jeżeli więc postanowimy sprawdzać wszystko - bardzo szybko się zorientujemy, że przestaniemy je stosować, bo zajmują zajmują tylko dużo czasu.
+Najlepiej testować jak najmniej, ale za to różnorodnie. Takie testy są dość wolne i wymagają od nas dodatkowej uwagi. Jeżeli więc postanowimy sprawdzać wszystko - bardzo szybko się zorientujemy, że przestaniemy je stosować, bo zajmują tylko dużo czasu.
 
-Nie ma więc sensu stworzyć osobych testów dla każdej podstrony z osobna, bo większość elementów będzie się powtarzać. O wiele lepiej jest stworzyć sobie style guide ze wszystkimi komponentami, takimi jak header, footer, widok pojedynczego wpisu, różne pole formularza, tabele etc.
+Nie ma więc sensu tworzyć osobych testów dla każdej podstrony z osobna, bo większość elementów będzie się powtarzać. O wiele lepiej jest przygotować style guide ze wszystkimi komponentami, takimi jak header, footer, widok pojedynczego wpisu, różne pole formularza, tabele etc.
 
 Warto też przygotować osobny scenariusz dla stanu hover oraz dla różnych interakcji.
 
